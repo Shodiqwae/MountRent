@@ -75,7 +75,7 @@ class _LoginPageState extends State<LoginPage> {
                          style: TextStyle(
                           fontFamily: "Montsserat-Bold",
                           color: Color.fromRGBO(0, 0, 0, 0.8),
-                          fontSize: 18),=
+                          fontSize: 18),
                           ),
                           ),
                   )
