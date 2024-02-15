@@ -90,6 +90,12 @@ flutter:
     - family: Montsserat-Semi
       fonts:
         - asset: fonts/Montserrat-SemiBold.ttf
+    - family: Inika-Bold
+      fonts:
+        - asset: fonts/Inika-Bold.ttf
+    - family: Inika-Regular
+      fonts:
+        - asset: fonts/Inika-Regular.ttf    
   #   - family: Schyler
   #     fonts:
   #       - asset: fonts/Schyler-Regular.ttf
