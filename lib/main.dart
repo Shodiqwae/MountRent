@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mount_app/Page/detail2.dart';
+import 'Page/detail.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         routes: {
-          "/" :(context) => detai2(),
+          "/" :(context) => detail(),
         },
     );
   }
