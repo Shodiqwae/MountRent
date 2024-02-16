@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
-import 'Page/detail.dart';
+import 'package:mount_app/Page/detail.dart';
+import 'package:mount_app/widget/OptionLoginWidget/Kalender.dart';
+import 'Page/detail2.dart';
+import 'package:mount_app/page/Login/Login_page1.dart';
+import 'package:mount_app/page/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +18,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         routes: {
-          "/" :(context) => detail(),
+          "/" :(context) => detail2(),
         },
     );
   }
