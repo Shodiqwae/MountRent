@@ -110,7 +110,7 @@ class detail extends StatelessWidget {
                                   Navigator.push(
                                       context,
                                       MaterialPageRoute(
-                                      builder: (context) => detai2()),
+                                      builder: (context) => detail2()),
                                   );
                                 },
                                 child: Center(

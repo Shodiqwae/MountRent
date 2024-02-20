@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mount_app/Page/detail.dart';
 import 'package:mount_app/widget/OptionLoginWidget/Kalender.dart';
+import 'package:mount_app/widget/OptionLoginWidget/Pembayaran.dart';
 import 'Page/detail2.dart';
 import 'package:mount_app/page/Login/Login_page1.dart';
 import 'package:mount_app/page/splash_screen.dart';
