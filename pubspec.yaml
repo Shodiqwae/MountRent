@@ -87,6 +87,9 @@ flutter:
     - family: Montsserat-Regular
       fonts:
         - asset: fonts/Montserrat-Regular.ttf
+    - family: Montsserat-ExtraBold
+      fonts:
+        - asset: fonts/Montserrat-ExtraBold.ttf
     - family: Montsserat-Semi
       fonts:
         - asset: fonts/Montserrat-SemiBold.ttf

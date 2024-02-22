@@ -13,11 +13,11 @@ class _SplashState extends State<Splash> {
   @override
   void initState() {
     super.initState();
-    SchedulerBinding.instance!.addPostFrameCallback((_) {
-      Future.delayed(Duration(seconds: 2), () {
+    SchedulerBinding.instance.addPostFrameCallback((_) {
+      Future.delayed(const Duration(seconds: 3), () {
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => OptionLogin()),
+          MaterialPageRoute(builder: (context) => const OptionLogin()),
         );
       });
     });
@@ -26,7 +26,7 @@ class _SplashState extends State<Splash> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(136, 171, 142, 1),
+      backgroundColor: const Color.fromRGBO(136, 171, 142, 1),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -35,7 +35,7 @@ class _SplashState extends State<Splash> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Container(
-                margin: EdgeInsets.only(top: 220),
+                margin: const EdgeInsets.only(top: 220),
                 child: Image.asset("assets/Nusantara 2.png"),
               ),
             ],
@@ -44,7 +44,7 @@ class _SplashState extends State<Splash> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Container(
-                margin: EdgeInsets.only(top: 100),
+                margin: const EdgeInsets.only(top: 100),
                 child: Image.asset("assets/Teks.png"),
               ),
             ],

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mount_app/widget/LoginPage/CreatwAccount.dart';
+import 'package:mount_app/widget/LoginPage/Ordivider.dart';
 import 'package:mount_app/widget/LoginPage/forgotpassword.dart';
 import 'package:mount_app/widget/LoginPage/imagelogin.dart';
 import 'package:mount_app/widget/LoginPage/inputlogin.dart';
@@ -17,12 +18,13 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: PreferredSize(
-        preferredSize: Size.fromHeight(60),
+        preferredSize: const Size.fromHeight(60),
         child: AppBar(
+          automaticallyImplyLeading: false,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(25),
           ),
-          backgroundColor: Color.fromRGBO(136, 171, 142, 1),
+          backgroundColor: const Color.fromRGBO(136, 171, 142, 1),
           centerTitle: true,
           flexibleSpace: Center(
             child: Image.asset(
@@ -33,6 +35,7 @@ class _LoginPageState extends State<LoginPage> {
           ),
         ),
       ),
+      
       body: ListView(
         children: [
           Column(
@@ -48,7 +51,7 @@ class _LoginPageState extends State<LoginPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    "Welcome To Mountain",
+                    "Welcome To Mountain Darma",
                     style: TextStyle(
                         fontSize: 22,
                         color: Colors.black,
@@ -82,12 +85,32 @@ class _LoginPageState extends State<LoginPage> {
                 ],
               ),
               CreateAccount(),
-              SizedBox(
-                width: 10,
-                child: Divider(
-                  thickness: 2,
-                  color: Colors.black,
-                ),
+              SizedBox(height: 20,),
+              DividerLogin(),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    margin: EdgeInsets.only(top: 20),
+                    width: 320,
+                    height: 55,
+                    decoration: BoxDecoration(
+                      color: Color.fromRGBO(126, 125, 125, 1),
+                      borderRadius: BorderRadius.circular(12)
+                    ),
+                    child: Row(
+                      children: [
+                        Container(
+                          height: 35,
+                          margin: EdgeInsets.only(left: 21),
+                          child: Image.asset("assets/google 1.png")),
+                          Container(
+                            margin: EdgeInsets.only(left: 25),
+                            child: Text("Sign up with google",style: TextStyle(color: Colors.white,fontFamily: "Montsserat-Semi",fontSize: 18),))
+                      ],
+                    ),
+                  )
+                ],
               )
             ],
           ),
