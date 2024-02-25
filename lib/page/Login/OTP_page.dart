@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mount_app/page/Login/ResetPassword_Page.dart';
-import 'package:mount_app/widget/LoginPage/imagelogin.dart';
-import 'package:mount_app/widget/OTPWidget/InputOTP.dart';
-import 'package:mount_app/widget/OTPWidget/TextDeskripsi.dart';
+import 'package:mount_app/widget/Login/LoginPage/imagelogin.dart';
+import 'package:mount_app/widget/Login/OTPWidget/InputOTP.dart';
+import 'package:mount_app/widget/Login/OTPWidget/TextDeskripsi.dart';
 
 class OTP_page extends StatelessWidget {
   const OTP_page({super.key});

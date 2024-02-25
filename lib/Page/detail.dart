@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:mount_app/Page/detail2.dart';
+import 'package:mount_app/page/detail2.dart';
+import 'package:mount_app/page/detail2.dart';
 
-class detail extends StatelessWidget {
-  const detail({super.key});
+class Detail extends StatelessWidget {
+  const Detail({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.greenAccent,
+        backgroundColor: Color.fromRGBO(136, 171, 142, 1),
         elevation: 0,
         centerTitle: true,
         leading: InkWell(
@@ -110,7 +111,7 @@ class detail extends StatelessWidget {
                                   Navigator.push(
                                       context,
                                       MaterialPageRoute(
-                                      builder: (context) => detail2()),
+                                      builder: (context) => Detail2()),
                                   );
                                 },
                                 child: Center(

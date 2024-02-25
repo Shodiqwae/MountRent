@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:mount_app/page/Login/Login_page1.dart';
+import 'package:mount_app/page/Login/Login_page.dart';
 import 'package:mount_app/page/OptionLogin.dart';
+import 'package:mount_app/page/Register_page/Register_page.dart';
+import 'package:mount_app/page/Register_page/cobaan.dart';
 
 class DeskripsiButtonOption extends StatelessWidget {
   const DeskripsiButtonOption({super.key});
@@ -107,22 +109,27 @@ class DeskripsiButtonOption extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Container(
-                      margin: EdgeInsets.only(top: 25),
-                      width: 370,
-                      height: 59.32,
-                      decoration: BoxDecoration(
-                        color: Color.fromRGBO(136, 171, 142, 0.90),
-                        borderRadius: BorderRadius.circular(15),
+                    InkWell(
+                    onTap: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const Register_Page()));
+                    },
+                      child: Container(
+                        margin: EdgeInsets.only(top: 25),
+                        width: 370,
+                        height: 59.32,
+                        decoration: BoxDecoration(
+                          color: Color.fromRGBO(136, 171, 142, 0.90),
+                          borderRadius: BorderRadius.circular(15),
+                        ),
+                        child: Center(
+                            child: Text(
+                          "Register",
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontFamily: "Montsserat-Bold",
+                              fontSize: 20),
+                        )),
                       ),
-                      child: Center(
-                          child: Text(
-                        "Register",
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontFamily: "Montsserat-Bold",
-                            fontSize: 20),
-                      )),
                     )
                   ],
                 ),

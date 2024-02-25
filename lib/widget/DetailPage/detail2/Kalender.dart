@@ -12,7 +12,6 @@ class _kalenderState extends State<kalender> {
   void _showDatePicker() {
     showDatePicker(
       context: context,
-      initialDate: DateTime.now(),
       firstDate: DateTime(2000),
       lastDate: DateTime(2025),
     ).then((value) {
@@ -46,7 +45,7 @@ class _kalenderState extends State<kalender> {
           MaterialButton(
             onPressed: _showDatePicker,
             child: const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 160, vertical: 10),
+              padding: EdgeInsets.symmetric(horizontal: 120, vertical: 10),
               child: Text(
                 'Tanggal',
                 style: TextStyle(

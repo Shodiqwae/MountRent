@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mount_app/page/Login/OTP_page.dart';
-import 'package:mount_app/widget/LoginPage/imagelogin.dart';
+import 'package:mount_app/widget/Login/LoginPage/imagelogin.dart';
 
 class ForgotPassword_page extends StatelessWidget {
   const ForgotPassword_page({super.key});
