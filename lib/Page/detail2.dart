@@ -79,7 +79,8 @@ class detail2 extends StatelessWidget {
               Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text("Condition",
+                  Text(
+                    "Condition",
                     style: TextStyle(
                       fontSize: 25,
                     ),
@@ -89,12 +90,8 @@ class detail2 extends StatelessWidget {
               SizedBox(height: 5),
               Column(
                 children: [
-                  Text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type."),
-                  Container(
-                    child: Center(
-                      
-                    ),
-                  ),
+                  Text(
+                      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type."),
                 ],
               ),
             ],

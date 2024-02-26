@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mount_app/page/Login/ForgotPassword_page.dart';
 
 class ForgotLogin extends StatelessWidget {
   const ForgotLogin({super.key});
@@ -12,7 +13,9 @@ class ForgotLogin extends StatelessWidget {
           child: Container(
             margin: EdgeInsets.only(right: 30),
             child: InkWell(
-              onTap: () {},
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> ForgotPassword_page() ));
+              },
               child: Text(
                 "Forgot Your Password?",
                 style: TextStyle(
