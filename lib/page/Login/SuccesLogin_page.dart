@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mount_app/widget/LoginPage/imagelogin.dart';
+import 'package:mount_app/widget/Login/LoginPage/imagelogin.dart';
 
 class ScsLogin extends StatelessWidget {
   const ScsLogin({super.key});

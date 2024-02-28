@@ -3,8 +3,9 @@ import 'package:mount_app/widget/Detail_widget_broo/Kalender.dart';
 import 'package:mount_app/widget/Detail_widget_broo/Pembayaran.dart';
 import 'package:mount_app/widget/Detail_widget_broo/Verif.dart';
 
-class detail2 extends StatelessWidget {
-  const detail2({super.key});
+
+class Detail2 extends StatelessWidget {
+  const Detail2({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +15,9 @@ class detail2 extends StatelessWidget {
         elevation: 0,
         centerTitle: true,
         leading: InkWell(
-          onTap: () {},
+          onTap: () {
+            Navigator.pop(context);
+          },
           child: Icon(
             Icons.arrow_back_ios_new,
             color: Colors.black,
@@ -26,7 +29,7 @@ class detail2 extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 50, vertical: 10),
+          padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
           child: Column(
             children: [
               Container(
@@ -41,7 +44,7 @@ class detail2 extends StatelessWidget {
                         color: Colors.black,
                       ),
                     ),
-                    SizedBox(width: 50),
+                    SizedBox(width:10),
                     Column(
                       children: [
                         Spacer(),

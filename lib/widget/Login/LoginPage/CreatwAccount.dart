@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mount_app/page/Register_page/Register_page.dart';
+import 'package:mount_app/page/Register_page/cobaan.dart';
 
 class CreateAccount extends StatelessWidget {
   const CreateAccount({super.key});
@@ -14,7 +16,9 @@ class CreateAccount extends StatelessWidget {
               color: Colors.black, fontSize: 15, fontFamily: "Montsserat-Semi"),
         ),
         InkWell(
-            onTap: () {},
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) => Register_Page()));
+            },
             child: Text(
               "Sign Up",
               style: TextStyle(

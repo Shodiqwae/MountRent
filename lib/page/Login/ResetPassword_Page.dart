@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mount_app/page/Login/SuccesLogin_page.dart';
-import 'package:mount_app/widget/LoginPage/imagelogin.dart';
-import 'package:mount_app/widget/ResetPassword/InputReset.dart';
-import 'package:mount_app/widget/ResetPassword/TextReset.dart';
+import 'package:mount_app/widget/Login/LoginPage/imagelogin.dart';
+import 'package:mount_app/widget/Login/ResetPassword/InputReset.dart';
+import 'package:mount_app/widget/Login/ResetPassword/TextReset.dart';
 
 class ResetPassword_Page extends StatefulWidget {
   const ResetPassword_Page({super.key});
