@@ -11,28 +11,26 @@ class verif extends StatefulWidget {
 class _verifState extends State<verif> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Container(
-          padding: EdgeInsets.all(40),
-          child: Column(
-            children: [
-              AnimatedButton(
-                text: "Payment",
-                color: Colors.greenAccent,
-                pressEvent: () {
-                  AwesomeDialog(
-                    context: context,
-                    dialogType: DialogType.success,
-                    animType: AnimType.topSlide,
-                    showCloseIcon: true,
-                    title: "Payment Succes",
-                    btnOkOnPress: () {},
-                  ).show();
-                },
-              ),
-            ],
-          ),
+    return Center(
+      child: Container(
+        padding: EdgeInsets.all(40),
+        child: Column(
+          children: [
+            AnimatedButton(
+              text: "Payment",
+              color: Colors.greenAccent,
+              pressEvent: () {
+                AwesomeDialog(
+                  context: context,
+                  dialogType: DialogType.success,
+                  animType: AnimType.topSlide,
+                  showCloseIcon: true,
+                  title: "Payment Succes",
+                  btnOkOnPress: () {},
+                ).show();
+              },
+            ),
+          ],
         ),
       ),
     );

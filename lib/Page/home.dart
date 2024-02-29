@@ -61,8 +61,8 @@ class Home extends StatelessWidget {
                 Column(
                   children: [
                     Container(
-                      height: 100,
-                      width: 100,
+                      height: 80,
+                      width: 80,
                       decoration: BoxDecoration(
                         color: Color.fromRGBO(87, 130, 86, 1),
                       ),
@@ -80,8 +80,8 @@ class Home extends StatelessWidget {
                 Column(
                   children: [
                     Container(
-                      height: 100,
-                      width: 100,
+                      height: 80,
+                      width: 80,
                       decoration: BoxDecoration(
                         color: Color.fromRGBO(136, 171, 142, 0.8),
                       ),
@@ -99,8 +99,8 @@ class Home extends StatelessWidget {
                 Column(
                   children: [
                     Container(
-                      height: 100,
-                      width: 100,
+                      height: 80,
+                      width: 80,
                       decoration: BoxDecoration(
                         color: Color.fromRGBO(197, 178, 12, 1),
                       ),
@@ -128,13 +128,13 @@ class Home extends StatelessWidget {
                   ),
                 ),
                 SizedBox(
-                  height: 150,
+                  height: 100,
                   child: ListView.builder(
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (context, index) {
                       // Tambahkan item untuk ditampilkan di sini
                       return Container(
-                        width: 300,
+                        width: 280,
                         margin: EdgeInsets.symmetric(horizontal: 10),
                         color: Colors.blue,
                         child: Center(
@@ -145,7 +145,35 @@ class Home extends StatelessWidget {
                         ),
                       );
                     },
-                    itemCount: 5, // Ganti dengan jumlah item yang ingin ditampilkan
+                    itemCount: 5,
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(height: 10),
+            Column(
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text("Destination",
+                      style: TextStyle(
+                        fontSize: 20,
+                      ),
+                    ),
+                    Text("View All",
+                      style: TextStyle(
+                        fontSize: 18,
+                        color: Colors.blue,
+                      ),
+                    ),
+                  ],
+                ),
+                Container(
+                  height: 140,
+                  width: 160,
+                  decoration: BoxDecoration(
+                    color: Colors.black,
                   ),
                 ),
               ],
