@@ -28,6 +28,7 @@ class _RegisterPageState extends State<RegisterPage> {
                 fontFamily: "Montserrat-ExtraBold",
               ),
             ),
+
             SizedBox(height: 10.0),
             Container(
               width: 340,
