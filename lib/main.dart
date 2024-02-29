@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:mount_app/page/Register_page/Register_page.dart';
-import 'package:mount_app/page/Register_page/succesRegister_page.dart';
-import 'package:mount_app/page/detail.dart';
-import 'package:mount_app/widget/DetailPage/detail2/Kalender.dart';
-import 'package:mount_app/widget/DetailPage/detail2/Pembayaran.dart';
+import 'package:mount_app/Page/detail.dart';
+import 'package:mount_app/page/home.dart';
+import 'package:mount_app/widget/Detail_widget_broo/Kalender.dart';
+import 'package:mount_app/widget/Detail_widget_broo/Pembayaran.dart';
 import 'Page/detail2.dart';
 import 'package:mount_app/page/Login/Login_page.dart';
 import 'package:mount_app/page/Login/OTP_page.dart';
@@ -22,8 +21,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home: Splash(),
+      debugShowCheckedModeBanner: false,
+      home: Home()
     );
   }
 }

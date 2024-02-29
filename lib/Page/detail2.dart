@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:mount_app/widget/DetailPage/detail2/Kalender.dart';
-import 'package:mount_app/widget/DetailPage/detail2/Pembayaran.dart';
+import 'package:mount_app/widget/Detail_widget_broo/Kalender.dart';
+import 'package:mount_app/widget/Detail_widget_broo/Pembayaran.dart';
+import 'package:mount_app/widget/Detail_widget_broo/Verif.dart';
 
 
 class Detail2 extends StatelessWidget {
@@ -78,7 +79,25 @@ class Detail2 extends StatelessWidget {
               kalender(),
               SizedBox(height: 10),
               Pembayaran(),
-              SizedBox(height: 10),
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    "Condition",
+                    style: TextStyle(
+                      fontSize: 25,
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(height: 5),
+              Column(
+                children: [
+                  Text(
+                      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type."),
+                ],
+              ),
+              verif(),
             ],
           ),
         ),
