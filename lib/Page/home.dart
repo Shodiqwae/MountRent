@@ -152,6 +152,36 @@ class Home extends StatelessWidget {
             ),
             SizedBox(height: 10),
             Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  "News",
+                  style: TextStyle(
+                    fontSize: 20,
+                  ),
+                ),
+                SizedBox(
+                  height: 100,
+                  child: ListView.builder(
+                    scrollDirection: Axis.horizontal,
+                    itemBuilder: (context, index) {
+                      // Tambahkan item untuk ditampilkan di sini
+                      return Container(
+                        width: 280,
+                        margin: EdgeInsets.symmetric(horizontal: 10),
+                        color: Colors.blue,
+                        child: Container(
+                          
+                        ),
+                      );
+                    },
+                    itemCount: 5,
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(height: 10),
+            Column(
               children: [
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
