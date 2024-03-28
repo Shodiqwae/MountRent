@@ -3,6 +3,7 @@ import 'package:mount_app/page/Profile.dart';
 import 'package:mount_app/page/ViewAll_Destination.dart';
 
 import 'package:mount_app/page/home.dart';
+import 'package:mount_app/page/wishlist/wishlist.dart';
 import 'package:mount_app/widget/Detail_widget_broo/Kalender.dart';
 import 'package:mount_app/widget/Detail_widget_broo/Pembayaran.dart';
 
