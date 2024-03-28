@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mount_app/Page/detail.dart';
 import 'package:mount_app/page/home.dart';
+import 'package:mount_app/page/wishlist/wishlist.dart';
 import 'package:mount_app/widget/Detail_widget_broo/Kalender.dart';
 import 'package:mount_app/widget/Detail_widget_broo/Pembayaran.dart';
 import 'Page/detail2.dart';
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Home()
+      home: wishlist()
     );
   }
 }
