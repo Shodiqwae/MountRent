@@ -42,7 +42,7 @@ class Booking extends StatelessWidget {
                     // (Misalnya, navigasi atau operasi lainnya)
                   },
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.transparent,
+                    backgroundColor: Colors.transparent,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10),
                     ),
@@ -70,7 +70,7 @@ class Booking extends StatelessWidget {
                     );
                   },
                   style: ElevatedButton.styleFrom(
-                    primary: Color.fromRGBO(136, 171, 142, 0.6),
+                    backgroundColor: Color.fromRGBO(136, 171, 142, 0.6),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10),
                     ),
@@ -94,7 +94,7 @@ class Booking extends StatelessWidget {
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(10.0),
                     child: Image.asset(
-                      'images/aaa 2.png',
+                      'assets/sindoro.jpg',
                       width: 400,
                       height: 200,
                       fit: BoxFit.cover,
@@ -187,7 +187,7 @@ class Booking extends StatelessWidget {
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(10.0),
                     child: Image.asset(
-                      'images/aaa 2.png',
+                      'assets/sindoro.jpg',
                       width: 400,
                       height: 200,
                       fit: BoxFit.cover,
@@ -321,7 +321,7 @@ class BookingPage2 extends StatelessWidget {
                     Navigator.pop(context);
                   },
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.transparent, // Atur warna tombol menjadi transparan
+                    backgroundColor: Colors.transparent, // Atur warna tombol menjadi transparan
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10), // Atur radius sudut tombol pertama
                     ),
@@ -349,7 +349,7 @@ class BookingPage2 extends StatelessWidget {
                     );
                   },
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.transparent, // Atur warna tombol menjadi transparan
+                    backgroundColor: Colors.transparent, // Atur warna tombol menjadi transparan
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10), // Atur radius sudut tombol kedua
                     ),
@@ -373,7 +373,7 @@ class BookingPage2 extends StatelessWidget {
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(10.0),
                     child: Image.asset(
-                      'images/aaa 2.png',
+                      'assets/sindoro.jpg',
                       width: 400,
                       height: 200,
                       fit: BoxFit.cover,

@@ -1,8 +1,10 @@
 import 'package:bottom_nav_layout/bottom_nav_layout.dart';
 import 'package:flutter/material.dart';
 import 'package:mount_app/model/detail_mount.dart';
+import 'package:mount_app/page/Booking/Booking.dart';
 import 'package:mount_app/page/Profile.dart';
 import 'package:mount_app/page/ViewAll_Destination.dart';
+import 'package:mount_app/page/wishlist/wishlist.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key});
@@ -288,32 +290,20 @@ class Home extends StatelessWidget {
           ),
         ),
         (_) => Profile(), // Change this to your Profile page
-        (_) => Scaffold(
-          body: Center(
-            child: TextField(
-              decoration: InputDecoration(hintText: 'Go..'),
-            ),
-          ),
-        ),
-        (_) =>  Scaffold(
-          body: Center(
-            child: TextField(
-              decoration: InputDecoration(hintText: 'Go..'),
-            ),
-          ),
-        ),
+        (_) => Wishlist(),
+        (_) => Booking(),
       ],
       bottomNavigationBar: (currentIndex, onTap) => BottomNavigationBar(
         currentIndex: currentIndex,
         onTap: (index) => onTap(index),
         items: [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home', backgroundColor: Color.fromRGBO(136, 171, 142, 1),),
           BottomNavigationBarItem(
-              icon: Icon(Icons.person), label: 'Profile'), // Add profile item
+              icon: Icon(Icons.person), label: 'Profile', backgroundColor: Color.fromRGBO(136, 171, 142, 1),), // Add profile item
           BottomNavigationBarItem(
-              icon: Icon(Icons.search), label: 'Wish List'),
+              icon: Icon(Icons.bookmark_add_rounded), label: 'Wish List', backgroundColor: Color.fromRGBO(136, 171, 142, 1),),
           BottomNavigationBarItem(
-              icon: Icon(Icons.search), label: 'Booking'),
+              icon: Icon(Icons.search), label: 'Booking', backgroundColor: Color.fromRGBO(136, 171, 142, 1),),
         ],
       ),
     );

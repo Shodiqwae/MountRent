@@ -1,33 +1,27 @@
 import 'package:flutter/material.dart';
 
-class wishlist extends StatelessWidget {
-  const wishlist({super.key});
+class Wishlist extends StatelessWidget {
+  const Wishlist({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.greenAccent,
-        leading: Row(
-          children: [
-            Text("Nusantara"),
-            Spacer(),
-            Container(
-              width: 40,
-              decoration: BoxDecoration(
-                color: Colors.green,
-                borderRadius: BorderRadius.circular(15),
-              ),
-              child: TextField(
-                decoration: InputDecoration(
-                  enabledBorder: InputBorder.none,
-                  focusedBorder: InputBorder.none,
-                  hintText: "Search... ",
-                  prefixIcon: Icon(Icons.search),
-                ),
-              ),
+      appBar: PreferredSize(
+        preferredSize: const Size.fromHeight(60),
+        child: AppBar(
+          automaticallyImplyLeading: false,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(25),
+          ),
+          backgroundColor: const Color.fromRGBO(136, 171, 142, 1),
+          centerTitle: true,
+          flexibleSpace: Center(
+            child: Image.asset(
+              'assets/name_nusantara.png',
+              fit: BoxFit.contain,
+              height: 40, // Set the height of the image
             ),
-          ],
+          ),
         ),
       ),
       body: Padding(padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),

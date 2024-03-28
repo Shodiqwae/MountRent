@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mount_app/page/Detail_Hiking/detail.dart';
 class ViewAll_Destination extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -87,7 +88,7 @@ class ViewAll_Destination extends StatelessWidget {
                                 children: [
                                   ElevatedButton(
                                     onPressed: () {
-                                    
+                                      Navigator.push(context, MaterialPageRoute(builder: (context) => Detail()));
                                     },
                                     style: ElevatedButton.styleFrom(
                                       fixedSize: Size(90, 5), // ukuran button
