@@ -26,88 +26,90 @@ class ForgotPassword_page extends StatelessWidget {
           ),
         ),
       ),
-      body: Column(
-        children: [
-          SizedBox(
-            height: 40,
-          ),
-          ImageLogin(),
-          SizedBox(
-            height: 60,
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Container(
-                child: Text(
-                  "It's okay! Reset your password",
-                  style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.black,
-                      fontFamily: "Inika-Regular"),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            SizedBox(
+              height: 40,
+            ),
+            ImageLogin(),
+            SizedBox(
+              height: 60,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  child: Text(
+                    "It's okay! Reset your password",
+                    style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.black,
+                        fontFamily: "Inika-Regular"),
+                  ),
                 ),
-              ),
-            ],
-          ),
-          SizedBox(height: 35,),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Container(
-                height: 50,
-                width: 340,
-                decoration: BoxDecoration(
-                    color: Color.fromRGBO(136, 171, 142, 0.8),
-                    borderRadius: BorderRadius.circular(12)),
-                child: Padding(
-                  padding: const EdgeInsets.only(left: 10),
-                  child: Expanded(
-                    child: TextFormField(
-                      style: TextStyle(
-                          color: const Color.fromARGB(255, 0, 0, 0),
-                          fontFamily: "Montsserat-Semi"),
-                      cursorColor: Color.fromARGB(255, 5, 210, 8),
-                      decoration: InputDecoration(
-                        border: InputBorder.none,
-                        hintText: 'Your Email',
-                        hintStyle: TextStyle(
-                          color: Colors.black,
-                          fontSize: 18,
+              ],
+            ),
+            SizedBox(height: 35,),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  height: 50,
+                  width: 340,
+                  decoration: BoxDecoration(
+                      color: Color.fromRGBO(136, 171, 142, 0.8),
+                      borderRadius: BorderRadius.circular(12)),
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 10),
+                    child: Expanded(
+                      child: TextFormField(
+                        style: TextStyle(
+                            color: const Color.fromARGB(255, 0, 0, 0),
+                            fontFamily: "Montsserat-Semi"),
+                        cursorColor: Color.fromARGB(255, 5, 210, 8),
+                        decoration: InputDecoration(
+                          border: InputBorder.none,
+                          hintText: 'Your Email',
+                          hintStyle: TextStyle(
+                            color: Colors.black,
+                            fontSize: 18,
+                          ),
                         ),
                       ),
                     ),
                   ),
                 ),
-              ),
-            ],
-          ),
-          SizedBox(height: 60,),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              InkWell(
-                onTap: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => OTP_page()));
-                },
-                child: Container(
-                 width: 320,
-                    height: 50,
-                    decoration: BoxDecoration(
-                      color: Color.fromRGBO(136, 171, 142, 0.847),
-                      borderRadius: BorderRadius.circular(12)
+              ],
+            ),
+            SizedBox(height: 60,),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                InkWell(
+                  onTap: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => OTP_page()));
+                  },
+                  child: Container(
+                   width: 320,
+                      height: 50,
+                      decoration: BoxDecoration(
+                        color: Color.fromRGBO(136, 171, 142, 0.847),
+                        borderRadius: BorderRadius.circular(12)
+                      ),
+                    child: Center(
+                      child: Text("Continue",
+                         style: TextStyle(
+                              fontFamily: "Montsserat-Bold",
+                              color: Color.fromRGBO(0, 0, 0, 0.465),
+                              fontSize: 18),),
                     ),
-                  child: Center(
-                    child: Text("Continue",
-                       style: TextStyle(
-                            fontFamily: "Montsserat-Bold",
-                            color: Color.fromRGBO(0, 0, 0, 0.465),
-                            fontSize: 18),),
                   ),
                 ),
-              ),
-            ],
-          ),
-        ],
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }

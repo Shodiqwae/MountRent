@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:mount_app/page/detail2.dart';
-import 'package:mount_app/page/detail2.dart';
+
+import 'package:mount_app/page/Detail_Hiking/detail2.dart';
+
 
 class Detail extends StatelessWidget {
   const Detail({super.key});

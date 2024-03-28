@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mount_app/page/home.dart';
 import 'package:mount_app/widget/Login/LoginPage/imagelogin.dart';
 
 class ScsLogin extends StatelessWidget {
@@ -95,7 +96,9 @@ class ScsLogin extends StatelessWidget {
                 InkWell(
                   splashColor: Color.fromARGB(255, 49, 154, 37),
                   borderRadius: BorderRadius.circular(12),
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => Home()));
+                  },
                   child: Container(
                     width: 325,
                     height: 55,

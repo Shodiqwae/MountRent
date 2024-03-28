@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mount_app/page/home.dart';
 import 'package:mount_app/widget/Login/LoginPage/imagelogin.dart';
 import 'package:mount_app/widget/Register/SuccesLogin.dart/Input_Succes.dart';
 import 'package:mount_app/widget/Register/SuccesLogin.dart/TextSuccesRegister.dart';
@@ -61,7 +62,9 @@ class _SuccesRegister_PageState extends State<SuccesRegister_Page> {
               InkWell(
                 splashColor: Color.fromARGB(255, 49, 154, 37),
                 borderRadius: BorderRadius.circular(12),
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: ((context) => Home())));
+                },
                 child: Container(
                   width: 320,
                   height: 50,

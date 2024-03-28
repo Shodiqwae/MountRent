@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mount_app/page/home.dart';
 import 'package:mount_app/widget/Login/LoginPage/CreatwAccount.dart';
 import 'package:mount_app/widget/Login/LoginPage/Ordivider.dart';
 import 'package:mount_app/widget/Login/LoginPage/forgotpassword.dart';
@@ -190,22 +191,27 @@ bool _obscureText = true;
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Container(
-                    width: 320,
-                    height: 50,
-                    decoration: BoxDecoration(
-                      color: Color.fromRGBO(136, 171, 142, 0.75),
-                      borderRadius: BorderRadius.circular(12)
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => Home()));
+                    },
+                    child: Container(
+                      width: 320,
+                      height: 50,
+                      decoration: BoxDecoration(
+                        color: Color.fromRGBO(136, 171, 142, 0.75),
+                        borderRadius: BorderRadius.circular(12)
+                      ),
+                      child: Center(
+                        child: Text(
+                          "Continue",
+                           style: TextStyle(
+                            fontFamily: "Montsserat-Bold",
+                            color: Color.fromRGBO(0, 0, 0, 0.8),
+                            fontSize: 18),
+                            ),
+                            ),
                     ),
-                    child: Center(
-                      child: Text(
-                        "Continue",
-                         style: TextStyle(
-                          fontFamily: "Montsserat-Bold",
-                          color: Color.fromRGBO(0, 0, 0, 0.8),
-                          fontSize: 18),
-                          ),
-                          ),
                   )
                 ],
               ),
